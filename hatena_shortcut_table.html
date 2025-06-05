@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>はてなブログ用ショートカットキー早見表</title>
+    <style>
+        /* はてなブログ埋め込み用簡易版CSS */
+        .shortcut-table-container {
+            max-width: 100%;
+            margin: 20px 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .table-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #2980b9, #3498db);
+            color: white;
+            border-radius: 6px;
+        }
+        
+        .table-header h3 {
+            margin: 0 0 5px 0;
+            font-size: 20px;
+        }
+        
+        .table-header p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .shortcut-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .shortcut-table th {
+            background: #34495e;
+            color: white;
+            padding: 12px 8px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .shortcut-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #ecf0f1;
+            font-size: 13px;
+        }
+        
+        .shortcut-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .shortcut-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .shortcut-table tr:hover {
+            background: #e3f2fd;
+            transition: background 0.2s ease;
+        }
+        
+        .key-combo {
+            font-family: monospace;
+            background: #2c3e50;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        
+        .key-combo.mac {
+            background: #e74c3c;
+        }
+        
+        .frequency {
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        .category-badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        
+        .category-badge.basic { background: #27ae60; }
+        .category-badge.window { background: #e67e22; }
+        .category-badge.browser { background: #9b59b6; }
+        .category-badge.text { background: #e74c3c; }
+        
+        .tips-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .tips-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 8px;
+        }
+        
+        .tip-list {
+            color: #856404;
+            margin: 0;
+            padding-left: 15px;
+        }
+        
+        /* レスポンシブ対応 */
+        @media (max-width: 600px) {
+            .shortcut-table-container {
+                padding: 15px;
+            }
+            
+            .shortcut-table {
+                font-size: 12px;
+            }
+            
+            .shortcut-table th,
+            .shortcut-table td {
+                padding: 8px 4px;
+            }
+            
+            .table-header h3 {
+                font-size: 18px;
+            }
+            
+            .key-combo {
+                font-size: 11px;
+                padding: 3px 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- はてなブログ埋め込み用HTML（ここから下をコピー） -->
+    <div class="shortcut-table-container">
+        <div class="table-header">
+            <h3>🚀 ショートカットキー早見表</h3>
+            <p>仕事ができる人の必須スキル - 保存推奨！</p>
+        </div>
+        
+        <table class="shortcut-table">
+            <thead>
+                <tr>
+                    <th style="width: 15%;">カテゴリ</th>
+                    <th style="width: 25%;">Windows</th>
+                    <th style="width: 25%;">Mac</th>
+                    <th style="width: 25%;">操作内容</th>
+                    <th style="width: 10%;">頻度</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 基本操作 -->
+                <tr>
+                    <td><span class="category-badge basic">基本</span></td>
+                    <td><span class="key-combo">Ctrl + C</span></td>
+                    <td><span class="key-combo mac">⌘ + C</span></td>
+                    <td>コピー</td>
+                    <td class="frequency">★★★</td>
+                </tr>
+                <tr>
+                    <td><span class="category-badge basic">基本</span></td>
+                    <td><span class="key-combo">Ctrl + V</span></td>
+                    <td><span class="key-combo mac">⌘ + V</span></td>
+                    <td>ペースト（貼り付け）</td>
+                    <td class="frequency">★★★</td>
+                </tr>
+                <tr>
+                    <td><span class="category-badge basic">基本</span></td>
+                    <td><span class="key-combo">Ctrl + Z</span></td>
+                    <td><span class="key-combo mac">⌘ + Z</span></td>
+                    <td>元に戻す（アンドゥ）</td>
+                    <td class="frequency">★★★</td>
+                </tr>
+                
+                <!-- ウィンドウ操作 -->
+                <tr>
+                    <td><span class="category-badge window">画面</span></td>
+                    <td><span class="key-combo">Alt + Tab</span></td>
+                    <td><span class="key-combo mac">⌘ + Tab</span></td>
+                    <td>ウィンドウ切り替え</td>
+                    <td class="frequency">★★★</td>
+                </tr>
+                <tr>
+                    <td><span class="category-badge window">画面</span></td>
+                    <td><span class="key-combo">Win + D</span></td>
+                    <td><span class="key-combo mac">F11</span></td>
+                    <td>デスクトップ表示</td>
+                    <td class="frequency">★★☆</td>
+                </tr>
+                <tr>
+                    <td><span class="category-badge window">画面</span></td>
+                    <td><span class="key-combo">Win + E</span></td>
+                    <td><span class="key-combo mac">⌘ + Space</span></td>
+                    <td>エクスプローラー起動</td>
+                    <td class="frequency">★☆☆</td>
+                </tr>
+                
+                <!-- ブラウザ操作 -->
+                <tr>
+                    <td><span class="category-badge browser">Web</span></td>
+                    <td><span class="key-combo">Ctrl + T</span></td>
+                    <td><span class="key-combo mac">⌘ + T</span></td>
+                    <td>新しいタブを開く</td>
+                    <td class="frequency">★★☆</td>
+                </tr>
+                <tr>
+                    <td><span class="category-badge browser">Web</span></td>
+                    <td><span class="key-combo">Ctrl + W</span></td>
+                    <td><span class="key-combo mac">⌘ + W</span></td>
+                    <td>タブを閉じる</td>
+                    <td class="frequency">★★☆</td>
+                </tr>
+                <tr>
+                    <td><span class="category-badge browser">Web</span></td>
+                    <td><span class="key-combo">Ctrl + L</span></td>
+                    <td><span class="key-combo mac">⌘ + L</span></td>
+                    <td>アドレスバーを選択</td>
+                    <td class="frequency">★☆☆</td>
+                </tr>
+                
+                <!-- 文字・検索操作 -->
+                <tr>
+                    <td><span class="category-badge text">文字</span></td>
+                    <td><span class="key-combo">Ctrl + F</span></td>
+                    <td><span class="key-combo mac">⌘ + F</span></td>
+                    <td>文字検索</td>
+                    <td class="frequency">★★☆</td>
+                </tr>
+                <tr>
+                    <td><span class="category-badge text">文字</span></td>
+                    <td><span class="key-combo">F2</span></td>
+                    <td><span class="key-combo mac">Enter</span></td>
+                    <td>ファイル名変更</td>
+                    <td class="frequency">★☆☆</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="tips-box">
+            <div class="tips-title">💡 習得のコツ</div>
+            <ul class="tip-list">
+                <li><strong>Step1:</strong> まずは★★★の基本3つから始めよう</li>
+                <li><strong>Step2:</strong> 1週間継続して体に覚えさせる</li>
+                <li><strong>Step3:</strong> 慣れたら★★☆を追加して効率アップ</li>
+                <li><strong>重要:</strong> 全部覚える必要なし。業務に合わせて選択</li>
+            </ul>
+        </div>
+    </div>
+    <!-- ここまでをはてなブログにコピー -->
+    
+    <!-- 使用方法の説明（実際の記事には含めない） -->
+    <div style="margin-top: 40px; padding: 20px; background: #e8f4f8; border-radius: 8px;">
+        <h3>📝 はてなブログでの使用方法</h3>
+        <ol style="line-height: 1.8;">
+            <li><strong>記事編集画面で「HTML編集」を選択</strong></li>
+            <li><strong>上記の「ここから下をコピー」〜「ここまでをはてなブログにコピー」をコピー</strong></li>
+            <li><strong>記事の該当箇所に貼り付け</strong></li>
+            <li><strong>「見たまま編集」に戻して確認</strong></li>
+        </ol>
+        
+        <h4>✅ はてなブログ対応のポイント</h4>
+        <ul style="line-height: 1.6;">
+            <li>外部CSS不要（すべてインライン記述）</li>
+            <li>JavaScript不使用</li>
+            <li>レスポンシブ対応済み</li>
+            <li>はてなブログのデフォルトCSSと競合しない設計</li>
+            <li>軽量で読み込み速度に影響なし</li>
+        </ul>
+    </div>
+</body>
+</html>
